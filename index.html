@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> bootstrap website </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- boostrap CSS file only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="
+ sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<!-- Bootstrap JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+<style type="text/css">
+	
+	.img-jmbo-one
+	{
+		background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("web1.jpg");
+		background-size: 100%, 100%;
+	}
+
+	.img-jmbo-two
+	{
+		background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url("web1.jpg");
+		background-size: 100%, 100%;
+	}
+
+	#carousel img
+	{
+		text-align: center;
+		width: 100%;
+        height: 600px;
+	}
+
+	ul
+	{
+		height: 70px;
+	}
+
+	.nav-item a:hover
+	{ 
+       border-bottom: 4px solid white;
+	}
+</style>
+</head>
+<body>
+
+	<!-- nav bar start -->
+
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
+
+		<div class="container">
+
+		<a href="#" class="navbar-brand"> BHANU PRATAP SINGH </a>
+
+		<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarid">
+		 <span class="navbar-toggler-icon">  </span> </button>
+
+		 <div class="collapse navbar-collapse" id="navbarid">
+
+		<ul class="navbar-nav text-center ml-auto">
+
+			<li class="nav-item" style="margin-left: 100px; margin-top: 15px;">
+			<a href="#" class="nav-link active" data-toggle="pill"> Home </a>
+			</li>
+
+			<li class="nav-item" style="margin-left: 120px; margin-top: 15px;">
+			<a href="#gallary" class="nav-link"> Gallary </a>
+			</li>
+
+			<li class="nav-item" style="margin-left: 140px; margin-top: 15px;">
+			<a href="#form" class="nav-link"> Contact </a>
+			</li>
+
+		</ul>
+	</div>
+</div>
+		
+	</nav>  <br> <br>
+
+	<!-- nav bar end -->
+
+	<!-- carousel start -->
+
+	<div class="container" id="carousel">
+
+	 <div class="carousel slide" id="myslider" data-ride="carousel">
+
+	  <div class="carousel-inner"  >
+
+	  	<div class="carousel-item active">
+	  		<img src="img/slide1.jpg" alt="1.jpg" >
+	  		<div class="carousel-caption">
+	  			<h1 class="text-warning"> Hi, I am bhanu pratap singh.</h1>
+	  			<p> This is my First image </p>
+	  		</div>
+	  	</div>
+
+	  	<div class="carousel-item">
+	  		<img src="img/slide2.jpg" alt="1.jpg" >
+	  		<div class="carousel-caption">
+	  			<h1 class="text-info"> Hi, I am bhanu pratap singh.</h1>
+	  			<p> This is my Second image </p>
+	  		</div>
+	  	</div>
+
+	  	<div class="carousel-item">
+	  		<img src="img/slide3.jpg" alt="1.jpg" >
+	  		<div class="carousel-caption">
+	  			<h1 class="text-white" style="font-weight: bold;"> Hi, I am bhanu pratap singh.</h1>
+	  			<p> This is my third image </p>
+	  		</div>
+	  	</div>
+	  	
+	  </div>
+
+	  <ul class="carousel-indicators">
+	  	<li data-target="#myslider" data-slide-to="0" class="actives"></li> 
+
+	  	<li data-target="#myslider" data-slide-to="1" class=""></li>
+
+	  	<li data-target="#myslider" data-slide-to="2" class=""></li>
+	  	
+	  </ul>
+
+	  <a href="#myslider"  data-slide="prev" class="carousel-control-prev">
+	  	<span class="carousel-control-prev-icon"></span>
+	  </a>
+
+	    <a href="#myslider"  data-slide="next" class="carousel-control-next">
+	  	<span class="carousel-control-next-icon"></span>
+	  </a>
+
+	 </div>
+
+	 </div>
+
+
+	<!-- Carousel end -->
+
+	<div class="container" id="gallary"> <br> <br> <br>
+
+		<h1 class="text-center text-warning"> Image gallary </h1> <br> <br> <br>
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-sm-4 col-12">
+				<img src="img/new10.jpg" class="img-fluid rounded">
+			</div>
+
+			<br> <br>
+
+			<div class="col-lg-4 col-md-4 col-sm-4 col-12">
+				<img src="img/newpic2.jpg" class="img-fluid rounded-circle">
+			</div>
+
+			<div class="col-lg-4 col-md-4 col-sm-4 col-12">
+				<img src="img/japan.jpg" class="img-fluid img-thumbnail">
+			</div>
+		</div>
+
+		<br> <br>
+
+
+				<div class="row">
+
+					<div class="col-lg-4 col-md-4 col-sm-4 col-12">
+				<img src="img/newpic2.jpg" class="img-fluid rounded-circle">
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 col-12">
+				<img src="img/new10.jpg" class="img-fluid rounded">
+			</div>
+
+			<div class="col-lg-4 col-md-4 col-sm-4 col-12">
+				<img src="img/japan.jpg" class="img-fluid img-thumbnail">
+			</div>
+		</div>
+
+		<br> <br>
+
+				<div class="row">
+			<div class="col-lg-4 col-md-4 col-sm-4 col-12">
+				<img src="img/new10.jpg" class="img-fluid rounded">
+			</div>
+
+				<div class="col-lg-4 col-md-4 col-sm-4 col-12">
+				<img src="img/japan.jpg" class="img-fluid img-thumbnail">
+			</div>
+
+			<div class="col-lg-4 col-md-4 col-sm-4 col-12">
+				<img src="img/newpic2.jpg" class="img-fluid rounded-circle">
+			</div>
+
+		
+		</div>
+
+		<br> <br>
+
+		<div class="row">
+
+			<div class="col-lg-4 col-md-4 col-sm-4 col-12">
+				<img src="img/japan.jpg" class="img-fluid img-thumbnail">
+			</div>
+
+			<div class="col-lg-4 col-md-4 col-sm-4 col-12">
+				<img src="img/newpic2.jpg" class="img-fluid rounded-circle">
+			</div>
+
+		<div class="col-lg-4 col-md-4 col-sm-4 col-12">
+				<img src="img/new10.jpg" class="img-fluid rounded">
+			</div>
+
+		</div>
+	</div>
+
+
+	<!-- Form contact coding start -->
+
+	<div class="container" id="form">
+
+		<h1 class="text-success text-center" style="padding-top: 80px;">
+		 Contact Us </h1>
+
+		 <hr style="border-bottom: 10px solid red; border-radius: 45%; width: 300px;">
+
+	<form style="padding-top: 40px;">
+	  <div class="form-group">
+		<label for="user"> Fullname:- </label>
+		<input type="text" name="" id="user" class="form-control" 
+		placeholder="Enter Your Fullname">
+	  </div>
+
+	    <div class="form-group">
+		<label for="email"> Email :- </label>
+		<input type="email" name="" id="user" class="form-control" 
+		placeholder="Enter Your Email">
+	  </div>
+
+	    <div class="form-group">
+		<label for="Password"> Mobile No:- </label>
+		<input type="password" name="" id="user" class="form-control"
+		 placeholder="Enter Your Mobile No">
+	  </div>
+
+	  <input type="submit" name="" class="btn btn-outline-primary">
+	</form>
+
+	</div>
+
+	<br> <br> <br> <br>
+
+  <!-- Form contact coding end -->
+
+   <!-- footer coding start -->
+
+   <footer style="width: 100%;" class="bg-dark text-align text-center p-5">
+   	<h1 class="text-light p-2"> Demo It solution company </h1>
+
+   <h4 class="text-success"> © copyright all right reserved </h4>
+   	
+   </footer>
+
+   <!-- footer coding End -->
+
+</body>
+</html>
